@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.color{
+	position: relative;
+	text-align: center;
+	color: red;
+
+}	
+.centered{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	
+}
+.contact{
+   font-size:25px;
+   color: black;
+   background-color: white;
+}
+.about{
+   color: slateblue;
+   font-size:25px ;
+   font-weight: bold;
+}
+.skills{
+   color: slateblue;
+   font-size:25px ;
+   font-weight: bold;
+}
+.details{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   font-size: 15;
+}
+.bar{
+   position: relative;
+
+   border: 2px solid #0d96e0;
+
+   border-radius: 20px;
+}
+.bar div{
+   position: relative;
+   width: 0;
+   height: 9px;
+   background-color:#0d96e0 ;
+}
+#html-bar{
+   animation: html-fill 2s forwards;
+}
+ @keyframes html-fill{
+   100%{
+      width: 90%;
+   }
+}
+#python-bar{
+   animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+   100%{
+      width: 50%;
+   }
+}
+#graphic-bar{
+   animation: graphic-fill 2s forwards;
+}
+@keyframes graphic-fill{
+   100%{
+      width: 80%;
+   }
+} 
+#affiliate-bar{
+   animation: affiliate-fill 2s forwards;
+}
+@keyframes affiliate-fill{
+   100%{
+      width: 100%;
+   }
+ }  
+ #video-bar{
+   animation: video-fill 2s forwards;
+ }
+ @keyframes video-fill{
+   100%{
+      width: 70%;
+   }
+ }
+ .vertical{height: 50px;
+border-left: 3px solid slateblue;
+
+ }
+ h5 {
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 25px;
+  color: darkblue;
+}
+h5:after {
+  content: '';
+  background: skyblue;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  border-radius: 50% 50% 50% 0%;
+  transform: rotate(-50deg);
+}
+h5:before {
+  content: '';
+  background: white;
+  width: 8px;
+  position: absolute;
+  height: 8px;
+  left: 16px;
+  border-radius: 50%;
+  top: 33px;
+  z-index: 1;
+  font-size: 25px;
+  color: skyblue;
+}
+.location{
+   font-family: sans-serif;
+   font-size: 18px;
+   color: darkblue;
+}
+.education{
+   font-family: sans-serif;
+   font-size: 25px;
+   color: darkblue;
+}
+.summary{
+   font-family: sans-serif;
+   font-size: 18px;
+   color: darkblue;
+}
+
+
+.services{
+    width: available;
+    height: available;
+    text-align: center;
+}
+
+.container{
+    width: available;
+    height: available;
+}
+
+.leftpane{
+    width: 25%;
+    min-width: 200px;
+    height: available;
+    min-height: 250px;
+    float: left;
+    background-color: rosybrown;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.middlepane{
+   width: 50%;
+   min-width: 200px;
+   height: available;
+   min-height: 250px;
+   float: left;
+   background-color: royalblue;
+   border-collapse: collapse;
+   text-align: center;
+}
+
+.rightpane{
+    width: 25%;
+    min-width: 200px;
+    height: available;
+    min-height: 250px;
+    float: right;
+    background-color: yellow;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.toppane{
+    width: available;
+    height: 100px;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+</style>
+
+  <body>
+</head>
+<body>
+  <p><b>Hi, I'm Edrick from Cameroon<b></p>
+   <div class="color">
+	<img src="edrick.jpg" alt="edrick" >
+	 <h3 class ="centered">
+		
+	 </h3>	
+   </div>
+<div class="about">
+<section><b><h2><font color="blue" ></font>About me</h2></b></section>
+ <hr color="blue"
+ width="5%"
+ align="left">
+</div>
+<i>I am a young, dynamic and multitalented guy that is aimed at becoming a software engineer. I am also a graphic designer and an affiliate marketer, with one year experience. I use my skills for the betterment of mankind.</i>
+ <div class="contact">
+ <h3>Personal info</h3>
+ <hr color="blue"
+  width="5%"
+  align="left">
+<ul style="list-style-type:square">
+<li><b>Name:</b>Fonguong Edrick N.</li>
+<li><b>Birthday:</b> 26 April </li>
+<li><b>Phone:</b> +237 680692014 </li>
+<li><b>City:</b> Bamenda, Cameroon </li>
+<li><b>Age:</b> 19</li>
+<li><b>Degree:</b> Master</li>
+<li><b>Email:</b> nchombonui26@gmail.com </li>
+</ul>
+</div>
+<div class="skills">
+ <h3>Skills</h3>
+ <hr color="blue"
+  width="5%"
+  align="left">
+</div>
+  I have developed the following skills:
+  <br/>
+  <br/>
+   <div class="details">
+      <span>HTML</span>
+      <span>90%</span>
+   
+</div>
+<div class="bar">
+   <div id="html-bar">    
+   </div>
+</div>
+<br/>
+
+<div class="details">
+      <span>PYTHON</span>
+      <span>50%</span>
+   </div>
+   <div class="bar">
+   <div id="python-bar">
+     
+   </div>
+   
+</div>
+<br/>
+   <div class="details">
+      <span>GRAPHIC DESIGNING</span>
+      <span>80%</span>
+</div>
+<div class="bar">
+   <div id="graphic-bar">
+   </div>
+   
+</div>
+<br/>
+   <div class="details">
+      <span>AFFILIATE MARKETING</span>
+      <span>90%</span>
+</div>
+<div class="bar">
+   <div id="affiliate-bar">
+      
+   </div>
+</div>
+<br/> 
+   <div class="details">
+      <span>VIDEO EDITING</span>
+      <span>70%</span>
+   
+</div>
+<div class="bar">
+   <div id="video-bar">
+   </div>  
+</div>
+<section>
+ <h2>Resume</h2>
+ <i>An intern seeking a full-time position to enhance my creative and technical skills. learning into details c , python programming languages and also mastering the html, css and javascript to my finger tips.</i>  
+</section>
+
+<div class="summary">
+<section><h2>Summary</h2>
+   <hr color="blue"
+   width="3%"
+   align="left">
+    <p>
+   <h4>FONGUONG EDRICK N.</h4>
+       Innovative Web Developer with 4+ months of experience designing and developing individual webpages.
+    In addition to that , I am also a graphic designer and an affiliate marketer with 1+ year experience.
+    </p>
+</section>
+</div>
+<div class="services">
+   <div class="container"></div>
+   <div class="toppane"><h1>My services</h1></div>
+   <div class="leftpane"><h2>Affiliate marketing</h2>
+    Selling and buying products in competivee markets and earning commission from the sales.
+    always available for business
+   </div>
+   <div class="middlepane"><h2>web development</h2>
+   Developing web pages for business and other purposes.
+   </div>
+   <div class="rightpane"><h2>Graphic designing and video editing</h2>
+   designing business card, logos ,flyers and many others with high quality.
+</div>
+</div>
+
+
+<h2>My work</h2>
+<img src="phone.jpg" alt="phone" width="60%" height="60%">
+<img src="phone2.jpg" alt="phone" width="60%" height="60%">
+<img src="phone1.jpg" alt="phone" width="60%" height="60%">
+<div class="education">
+   
+<section>
+<h3>Education</h3>
+<hr color="blue"
+   width="3%"
+   align="left">
+<p>
+<b>Bachelor of Engineering-Computer Engineering</b>
+<p><b>2022-2026</b></p>
+</p>
+</section>
+</div>
+<section>
+<div class="location">
+   <h2>Contact</h2>
+   <hr color="blue"
+   width="3%"
+   align="left">
+   I am available for any task or business idea you have. Together,  we can grow your bussiness. feel free to contact me
+
+<h5>Location: Bambili</h5>
+<h5>Tel: +237680692014</h5>
+</div>
+
+<br/>
+<br/>
+</section>
+  <form action="/submit-form" method="post">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="name">Name:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="name">Message:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <button type="submit">Send message</button>
+</form>  
+<footer><b>CopyRight 2022 My Portfolio</b></footer>
+</body>
+</html>
